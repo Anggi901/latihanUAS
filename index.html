@@ -1,11 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=g, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>UAS</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-   <h2>blabla</h2>
+  <div class="screen">
+    <span id="output">Tekan tombol pada controller...</span>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/5/55/Pixel_heart.png" alt="Sprite" class="sprite">
+  </div>
+
+  <div class="controller">
+    <div class="left">
+      <button class="btn dir" data-key="Atas">^</button> <!--data-key itu kalau di js nanti buat ambil value ny lalu ditampilkan ditempat yg di inginkan-->
+      <div class="horiz">
+        <button class="btn dir" data-key="Kiri">&lt;</button> <!--lt dan gt hanya untuk ">/sebaliknya" nahh dia ini bkn penutup tag tapi emang utk ditampilkan diweb ny aja
+        kek tanda panah itu loh, kalau maksa pake > nsnti eror dan diweb jadi terbalik--> 
+        <button class="btn dir" data-key="Kanan">&gt;</button>
+      </div>
+      <button class="btn dir" data-key="Bawah">v</button>
+    </div>
+    <div class="right">
+      <button class="btn act" data-key="B">B</button>
+      <button class="btn act" data-key="A">A</button>
+    </div>
+  </div>
+
+  <footer>
+    NIM: 23430205 | Nama: Anggi Dwinda Putri | https://github.com/Anggi901/latihanUAS1123.github.io.git
+    <a href="https://github.com/Anggi901" target="_blank">GitHub</a>
+  </footer>
+
+  <audio id="clickSound" src="https://freesound.org/data/previews/522/522167_11775627-lq.mp3"></audio>
+
+  <script src="script.js"></script>
 </body>
 </html>
