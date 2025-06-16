@@ -14,7 +14,7 @@ buttons.forEach(btn => {
 });
 
 // Keyboard support
-document.addEventListener('keydown', (e) => {
+document.addEventListener('keydown', (e) => { /*keydown: Saat tombol mulai ditekan ke bawah, keyup:Saat tombol dilepas (angkat jari) maka perintah akan dijalankan*/
   let key = '';
   switch(e.key) {
     case 'ArrowUp': key = 'Atas'; break;
@@ -36,3 +36,4 @@ document.addEventListener('keydown', (e) => {
     });
   }
 });
+
